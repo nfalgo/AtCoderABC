@@ -2,10 +2,14 @@
 using namespace std;
 
 int main () {
-  int a;
-  cout << "putin a >>";
-  cin >> a;
-  cout << "you put " << a << endl;
+  int n, a, b;
+  cin >> n >> a >> b;
+  
+  int x;
+  if (a*n > b) x = b;
+  else x = a*n;
+
+  cout << x << endl;
 
   return 0;
 }
